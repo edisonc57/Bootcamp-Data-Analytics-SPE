@@ -29,8 +29,7 @@ caudal_maximo= st.number_input ('Ingrese el caudal máximo')
 presion_yacimiento = st.number_input('Ingrese la presión del yacimiento')
 presión_fondo = st.number_input('Ingese la presion de fondo fluyente')
 decimales = st.slider('Seleccione la cantidad de decimales para su resultado')
-
-  caudal = calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, decimales)
+caudal = calcular_caudal_vogel(caudal_maximo, presion_yacimiento, presion_fondo, decimales)
 
   st.write("El caudal es:", caudal)
 
