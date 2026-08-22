@@ -18,14 +18,14 @@ if modulos == 'Introducción a variables':
     st.write(status)
 elif modulos == 'Funciones':
 
-def calcular_caudal_vogel(caudal_maximo= 1000, presion_yacimiento= 3000, presion_fondo=0, decimales=2):
+    def calcular_caudal_vogel(caudal_maximo= 1000, presion_yacimiento= 3000, presion_fondo=0, decimales=2):
 
     relacion_presion = presion_fondo / presion_yacimiento
     caudal = caudal_maximo * (1 - 0.2 * relacion_presion - 0.8 * relacion_presion**2 )
 
     return round(caudal, decimales)
 
-    caudal_maximo= st.number_input ('Ingrese el caudal máximo')
-    presion_yacimiento = st.number_input('Ingrese la presión del yacimiento')
-    presión_fondo = st.number_input('Ingese la presion de fondo fluyente')
-    decimales = st.slider('Seleccione la cantidad de decimales para su resultado')
+caudal_maximo= st.number_input ('Ingrese el caudal máximo')
+presion_yacimiento = st.number_input('Ingrese la presión del yacimiento')
+presión_fondo = st.number_input('Ingese la presion de fondo fluyente')
+decimales = st.slider('Seleccione la cantidad de decimales para su resultado')
