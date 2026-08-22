@@ -16,9 +16,7 @@ if modulos == 'Introducción a variables':
     st.write(Petroleo_bpd)
     st.write(agua_bpd)
     st.write(status)
-
 elif modulos == 'Funciones':
-
 
 def calcular_caudal_vogel(caudal_maximo= 1000, presion_yacimiento= 3000, presion_fondo=0, decimales=2):
     """
@@ -35,7 +33,6 @@ def calcular_caudal_vogel(caudal_maximo= 1000, presion_yacimiento= 3000, presion
     """
 
     relacion_presion = presion_fondo / presion_yacimiento
-
     caudal = caudal_maximo * (1 - 0.2 * relacion_presion - 0.8 * relacion_presion**2 )
 
     return round(caudal, decimales)
