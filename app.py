@@ -3,7 +3,8 @@ import streamlit as st
 st.title ("Bootcamp-Data-Analytics-SPE")
 st.sidebar.title('Parámetros')
 
-módulos= st.sidebar.selectbox('Selecciona un módulo, ['Introducción a variables', 'Funciones')
+módulos= st.sidebar.selectbox('Selecciona un módulo', ['Introducción a variables', 'Funciones')
+
 if modulos == 'Introducción a variables'
 
 pozo =  "SPE-001"
