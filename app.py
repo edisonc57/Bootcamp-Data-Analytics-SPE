@@ -17,7 +17,7 @@ st.write(Petroleo_bpd)
 st.write(agua_bpd)
 st.write(status)
 
-st.sidebar.title('Parámetros')
+elif st.sidebar.title('Parámetros')
 
 
 def calcular_caudal_vogel(caudal_maximo= 1000, presion_yacimiento= 3000, presion_fondo=0, decimales=2):
