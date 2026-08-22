@@ -7,15 +7,15 @@ modulos= st.sidebar.selectbox('Selecciona un módulo', ['Introducción a variabl
 
 if modulos == 'Introducción a variables':
 
-pozo =  "SPE-001"
-Petroleo_bpd= 1250
-agua_bpd = 350.50
-status = True
-
-st.write(pozo)
-st.write(Petroleo_bpd)
-st.write(agua_bpd)
-st.write(status)
+    pozo =  "SPE-001"
+    Petroleo_bpd= 1250
+    agua_bpd = 350.50
+    status = True
+    
+    st.write(pozo)
+    st.write(Petroleo_bpd)
+    st.write(agua_bpd)
+    st.write(status)
 
 elif modulos == 'Funciones':
 
@@ -41,3 +41,6 @@ def calcular_caudal_vogel(caudal_maximo= 1000, presion_yacimiento= 3000, presion
     return round(caudal, decimales)
 
     caudal_maximo= st.number_input ('Ingrese el caudal máximo')
+    presion_yacimiento = st.number_input('Ingrese la presión del yacimiento')
+    presión_fondo = st.number_input('Ingese la presion de fondo fluyente')
+    decimales = st.slider('Seleccione la cantidad de decimales para su resultado')
