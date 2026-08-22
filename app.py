@@ -11,4 +11,5 @@ st.write(pozo)
 st.write(Petroleo_bpd)
 st.write(agua_bpd)
 st.write(status)
-print()
+
+st.sidebar.title('Parámetros')
