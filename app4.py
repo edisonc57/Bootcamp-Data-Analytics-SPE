@@ -86,7 +86,7 @@ elif modulos == 'Importación de librerías':
     agua = st.number_input(
             "Produccion sde agua",
             min_value = 0.0,
-            value = 200.0
+            value = 50.0
     )
     días = st.number_input(
             "Días",
@@ -95,7 +95,7 @@ elif modulos == 'Importación de librerías':
     )
 
     if st.button('Calcular'):
-        liquido = calcular_líquido(
+        liquido = calcular_liquido(
             petroleo,
             agua
         )
