@@ -1,9 +1,7 @@
 import streamlit as st 
 import pandas as pd
 
-from funciones_calculo import(calcular_líquido,
-    calcular_bsw,
-    proyectar_produccion)
+from funciones_calculo import(calcular_liquido, calcular_bsw, proyectar_produccion)
 
 from funciones_datos import (filtrar_pozo, resumen_dataframe)
 
